@@ -48,11 +48,9 @@
       <!--works-->
       <div v-show="active == 'works'" v-repeat="x: works">
         <h3 v-text="$key" class="page-header text-capitalize"></h3>
-          <a v-repeat="w: x" v-attr="href: w.url" class="col-xs-12">
-            <div class="bs-callout">
-              <h4 v-text="w.title"></h4>
-              <p v-text="w.detail"></p>
-            </div>
+          <a v-repeat="w: x" v-attr="href: w.url" class="col-xs-12 works-item">
+            <h4 v-text="w.title"></h4>
+            <p v-text="w.detail"></p>
           </a>
         </div>
       </div>

@@ -2,29 +2,38 @@ body {
   background-color: #fff5ff;
 }
 
-.medium-octicon {
-  font-size: 24px;
+
+/* works-item */
+.works-item {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-color: #ffaaff;
+  border-left-width: 5px;
+  border-radius: 3px;
+
+  text-decoration: none;
+  display: block;
+  background-color: #ffccff;
+  color: #330033;
+}
+a:hover.works-item, a:active.works-item {
+  text-decoration: none;
+  background-color: #ffbbff;
+  border-color: #ff88ff;
+  color: #330033;
 }
 
-
-/* bs-callout */
-.bs-callout {
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #eee;
-    border-left-width: 5px;
-    border-radius: 3px;
+.works-item h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
 }
-.bs-callout h4 {
-    margin-top: 0;
-    margin-bottom: 5px;
+.works-item p:last-child {
+  margin-bottom: 0;
 }
-.bs-callout p:last-child {
-    margin-bottom: 0;
+.works-item code {
+  border-radius: 3px;
 }
-.bs-callout code {
-    border-radius: 3px;
-}
-.bs-callout+.bs-callout {
-    margin-top: -5px;
+.works-item+.works-item {
+  margin-top: -5px;
 }
