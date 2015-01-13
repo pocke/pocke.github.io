@@ -16,7 +16,12 @@ body {
   display: block;
   background-color: #ffccff;
   color: #330033;
+
+  transition: color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
+  transition: border-color 0.3s ease 0s;
 }
+
 a:hover.works-item, a:active.works-item {
   text-decoration: none;
   background-color: #ffbbff;
