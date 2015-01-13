@@ -21,30 +21,32 @@
 
 
     <div class="row">
-      <div class="col-xs-4">
-        <h2 class="text-uppercase text-center">Links</h2>
-      </div>
-      <div class="col-xs-4 text-uppercase text-center">
+      <div class="col-xs-4" v-on="click: show('about')">
         <h2 class="text-uppercase text-center">About</h2>
       </div>
-      <div class="col-xs-4 text-uppercase text-center">
+      <div class="col-xs-4" v-on="click: show('works')">
         <h2 class="text-uppercase text-center">Works</h2>
+      </div>
+      <div class="col-xs-4" v-on="click: show('links')">
+        <h2 class="text-uppercase text-center">Links</h2>
       </div>
     </div>
 
 
     <!-- content -->
     <div class="row">
-      <!--links-->
-      <div class="col-xs-12">
+      <!--about-->
+      <div v-show="active == 'about'" class="col-xs-12">
       </div>
 
-      <!--about-->
-      <div class="col-xs-12">
+
+      <!--links-->
+      <div v-show="active == 'links'" class="col-xs-12">
       </div>
+
 
       <!--works-->
-      <div v-repeat="x: works">
+      <div v-show="active == 'works'" v-repeat="x: works">
         <h3 v-text="$key" class="page-header text-capitalize"></h3>
           <a v-repeat="w: x" v-attr="href: w.url" class="col-xs-12">
             <div class="bs-callout">

@@ -7,6 +7,7 @@
   var app = new Vue({
     el: '#vue-main',
     data: {
+      active: 'about',
       works: {
         applications: [
           {
@@ -29,5 +30,10 @@
         ],
       },
     },
+    methods: {
+      show: function (page) {
+        this.active = page;
+      },
+    }
   });
 })();
