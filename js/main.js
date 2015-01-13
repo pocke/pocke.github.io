@@ -32,8 +32,19 @@
     },
     methods: {
       show: function (page) {
+        history.pushState(page, null, page + '.html');
         this.active = page;
       },
     }
   });
+
+  window.addEventListener('popstate', function (e) {
+    app.$data.active = e.state;
+  });
+
+  var path = location.pathname;
+  var m = /^\/(\w+)\.html$/.exec(path);
+  if (m && m[1] != 'index') {
+    app.$data.active = m[1];
+  }
 })();
