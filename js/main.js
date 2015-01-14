@@ -4,6 +4,7 @@
     template: '#works-item-template',
   });
 
+
   var app = new Vue({
     el: '#vue-main',
     data: {
@@ -34,6 +35,9 @@
       show: function (page) {
         history.pushState(page, null, page + '.html');
         this.active = page;
+      },
+      is_active: function (page) {
+        return this.active == page;
       },
     }
   });

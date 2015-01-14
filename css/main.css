@@ -2,6 +2,12 @@ body {
   background-color: #fff5ff;
 }
 
+.content-pane {
+  transition: opacity 0.2s ease;
+}
+.content-pane.fade-enter, .content-pane.fade-leave {
+  opacity: 0;
+}
 
 /* works-item */
 .works-item {

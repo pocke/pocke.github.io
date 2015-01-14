@@ -36,22 +36,25 @@
     <!-- content -->
     <div class="row">
       <!--about-->
-      <div v-show="active == 'about'" class="col-xs-12">
+      <div class="content-pane" v-if="is_active('about')" class="col-xs-12" v-transition="fade">
+        <span>foo</span>
       </div>
 
 
       <!--links-->
-      <div v-show="active == 'links'" class="col-xs-12">
+      <div class="content-pane" v-if="is_active('links')" class="col-xs-12" v-transition="fade">
+        <span>bar</span>
       </div>
 
 
       <!--works-->
-      <div v-show="active == 'works'" v-repeat="x: works">
-        <h3 v-text="$key" class="page-header text-capitalize"></h3>
-          <a v-repeat="w: x" v-attr="href: w.url" class="col-xs-12 works-item">
-            <h4 v-text="w.title"></h4>
-            <p v-text="w.detail"></p>
-          </a>
+      <div class="content-pane" v-if="is_active('works')" class="col-xs-12" v-transition="fade">
+        <div v-repeat="x: works">
+          <h3 v-text="$key" class="page-header text-capitalize"></h3>
+            <a v-repeat="w: x" v-attr="href: w.url" class="col-xs-12 works-item">
+              <h4 v-text="w.title"></h4>
+              <p v-text="w.detail"></p>
+            </a>
         </div>
       </div>
     </div>
