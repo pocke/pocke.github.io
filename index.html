@@ -10,55 +10,57 @@
 
 <body>
   <div id="vue-main" class="container" style="margin-top: 30px;">
+    <div class="col-xs-12">
 
-    <h1 class="page-header">me.pocke.me</h1>
-    <div class="row">
-      <div class="col-xs-4"></div>
-      <div class="col-xs-4 offset-col-xs-4">
-        <img src="imgs/icon.svg" alt="Icon" class="img-responsive img-circle">
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col-xs-4" v-on="click: show('about')">
-        <h2 class="text-uppercase text-center">About</h2>
-      </div>
-      <div class="col-xs-4" v-on="click: show('works')">
-        <h2 class="text-uppercase text-center">Works</h2>
-      </div>
-      <div class="col-xs-4" v-on="click: show('links')">
-        <h2 class="text-uppercase text-center">Links</h2>
-      </div>
-    </div>
-
-
-    <!-- content -->
-    <div class="row">
-      <!--about-->
-      <div class="content-pane" v-if="is_active('about')" class="col-xs-12" v-transition="fade">
-        <span>foo</span>
-      </div>
-
-
-      <!--links-->
-      <div class="content-pane" v-if="is_active('links')" class="col-xs-12" v-transition="fade">
-        <span>bar</span>
-      </div>
-
-
-      <!--works-->
-      <div class="content-pane" v-if="is_active('works')" class="col-xs-12" v-transition="fade">
-        <div v-repeat="x: works">
-          <h3 v-text="$key" class="page-header text-capitalize"></h3>
-            <a v-repeat="w: x" v-attr="href: w.url" class="col-xs-12 works-item">
-              <h4 v-text="w.title"></h4>
-              <p v-text="w.detail"></p>
-            </a>
+      <h1 class="page-header">me.pocke.me</h1>
+      <div class="row">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4 offset-col-xs-4">
+          <img src="imgs/icon.svg" alt="Icon" class="img-responsive img-circle">
         </div>
       </div>
-    </div>
 
+
+      <div class="row" style="margin-top: 10px;">
+        <a href="" v-class="active: is_active('about')" class="col-xs-4 menu-btn" v-on="click: show('about')">
+          <h2 class="text-uppercase text-center">About</h2>
+        </a>
+        <a href="" v-class="active: is_active('works')" class="col-xs-4 menu-btn" v-on="click: show('works')">
+          <h2 class="text-uppercase text-center">Works</h2>
+        </a>
+        <a href="" v-class="active: is_active('links')" class="col-xs-4 menu-btn" v-on="click: show('links')">
+          <h2 class="text-uppercase text-center">Links</h2>
+        </a>
+      </div>
+
+
+      <!-- content -->
+      <div class="row">
+        <!--about-->
+        <div class="content-pane" v-if="is_active('about')" class="col-xs-12" v-transition="fade">
+          <span>foo</span>
+        </div>
+
+
+        <!--links-->
+        <div class="content-pane" v-if="is_active('links')" class="col-xs-12" v-transition="fade">
+          <span>bar</span>
+        </div>
+
+
+        <!--works-->
+        <div class="content-pane" v-if="is_active('works')" class="col-xs-12" v-transition="fade">
+          <div v-repeat="x: works">
+            <h3 v-text="$key" class="page-header text-capitalize"></h3>
+              <a v-repeat="w: x" v-attr="href: w.url" class="col-xs-12 works-item">
+                <h4 v-text="w.title"></h4>
+                <p v-text="w.detail"></p>
+              </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div> <!-- container -->
 
   <script id="works-item-template" type="x-template">

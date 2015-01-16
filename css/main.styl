@@ -16,9 +16,32 @@ body {
   }
 }
 
+// menu-btn
+color_works_item_font = #303
+
+.menu-btn {
+  border_color = #fcf
+  text-decoration  none
+  box-sizing border-box
+  color  color_works_item_font
+
+  border-bottom solid 2px border_color
+
+  a:hover&, a:active&, a:focus& {
+    text-decoration  none
+    color  color_works_item_font
+    outline none
+  }
+
+  &.active {
+    border-radius 3px 3px 0 0
+    border solid 2px border_color
+    border-bottom-style none
+  }
+}
+
 /* works-item */
 
-color_works_item_font = #303
 
 .works-item {
   padding  20px

@@ -33,6 +33,7 @@
     },
     methods: {
       show: function (page) {
+        this.$event.preventDefault();
         history.pushState(page, null, page + '.html');
         this.active = page;
       },
