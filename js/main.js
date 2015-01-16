@@ -1,4 +1,5 @@
 (function () {
+  "use strict";
 
   Vue.component('works-item', {
     template: '#works-item-template',
