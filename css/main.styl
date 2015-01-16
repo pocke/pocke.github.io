@@ -1,0 +1,61 @@
+color_body_back = #fff5ff
+
+body {
+  background-color color_body_back
+}
+
+.content-pane {
+  transition  opacity 0.2s ease
+
+  &.fade-enter, &.fade-leave {
+    overflow hidden
+    height   0
+    opacity  0
+  }
+}
+
+/* works-item */
+
+color_works_item_font = #303
+
+.works-item {
+  padding  20px
+  margin  20px 0
+  border  1px solid #eee
+  border-color  #ffaaff
+  border-left-width  5px
+  border-radius  3px
+
+  text-decoration  none
+  display  block
+  background-color  #ffccff
+  color  color_works_item_font
+
+  transition  color 0.3s ease 0s
+  transition  background-color 0.3s ease 0s
+  transition  border-color 0.3s ease 0s
+
+  a:hover&, a:active& {
+    text-decoration  none
+    background-color  #ffbbff
+    border-color  #ff88ff
+    color  color_works_item_font
+  }
+
+  h4 {
+    margin-top  0
+    margin-bottom  5px
+  }
+
+  p last-child {
+    margin-bottom  0
+  }
+
+  code {
+    border-radius  3px
+  }
+
+  &+& {
+    margin-top  -5px
+  }
+}
