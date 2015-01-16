@@ -22,15 +22,9 @@
 
 
       <div class="row" style="margin-top: 10px;">
-        <a href="" v-class="active: is_active('about')" class="col-xs-4 menu-btn" v-on="click: show('about')">
-          <h2 class="text-uppercase text-center">About</h2>
-        </a>
-        <a href="" v-class="active: is_active('works')" class="col-xs-4 menu-btn" v-on="click: show('works')">
-          <h2 class="text-uppercase text-center">Works</h2>
-        </a>
-        <a href="" v-class="active: is_active('links')" class="col-xs-4 menu-btn" v-on="click: show('links')">
-          <h2 class="text-uppercase text-center">Links</h2>
-        </a>
+        <menu-btn v-with="name: 'about'"></menu-btn>
+        <menu-btn v-with="name: 'works'"></menu-btn>
+        <menu-btn v-with="name: 'links'"></menu-btn>
       </div>
 
 
@@ -52,10 +46,10 @@
         <div class="content-pane" v-if="is_active('works')" class="col-xs-12" v-transition="fade">
           <div v-repeat="x: works">
             <h3 v-text="$key" class="page-header text-capitalize"></h3>
-              <a v-repeat="w: x" v-attr="href: w.url" class="col-xs-12 works-item">
-                <h4 v-text="w.title"></h4>
-                <p v-text="w.detail"></p>
-              </a>
+            <a v-repeat="w: x" v-attr="href: w.url" class="col-xs-12 works-item">
+              <h4 v-text="w.title"></h4>
+              <p v-text="w.detail"></p>
+            </a>
           </div>
         </div>
       </div>
@@ -63,7 +57,11 @@
     </div>
   </div> <!-- container -->
 
-  <script id="works-item-template" type="x-template">
+  <!-- v-with="name: 'about'" -->
+  <script id="menu-btn-template" type="x-template">
+    <a href="" v-class="active: is_active(name)" class="col-xs-4 menu-btn" v-on="click: show(name)">
+      <h2 class="text-uppercase text-center" v-text="name"></h2>
+    </a>
   </script>
 
   <!-- Scripts -->

@@ -1,9 +1,17 @@
 (function () {
   "use strict";
 
-  Vue.component('works-item', {
-    template: '#works-item-template',
+
+  Vue.component('menu-btn', {
+    template: '#menu-btn-template',
+    methods: {
+      show: function (name) {
+        this.$event.preventDefault();
+        this.$dispatch('show', name);
+      },
+    }
   });
+
 
 
   var app = new Vue({
@@ -34,15 +42,21 @@
     },
     methods: {
       show: function (page) {
-        this.$event.preventDefault();
         history.pushState(page, null, page + '.html');
         this.active = page;
       },
       is_active: function (page) {
         return this.active == page;
       },
-    }
+    },
+    created: function () {
+      this.$on('show', function (name) {
+        this.show(name);
+      });
+    },
   });
+
+
 
   window.addEventListener('popstate', function (e) {
     app.$data.active = e.state;
