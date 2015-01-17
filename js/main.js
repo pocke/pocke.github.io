@@ -46,6 +46,23 @@
           }
         ],
       },
+      links: [
+        {
+          title:  'GitHub: pocke',
+          url:    'https://github.com/pocke',
+          detail: '作ったものの殆どはここにあります。'
+        },
+        {
+          title:  'Twitter: p_ck_',
+          url:    'https://twitter.com/p_ck_',
+          detail: '日々の雑多なつぶやき。にゃーんとか呟いています。',
+        },
+        {
+          title:  'Blog: pockestrap',
+          url:    'http://pocke.hatenablog.com/',
+          detail: '技術系ブログ。学んだことを備忘録ついでに発信。',
+        }
+      ],
     },
     methods: {
       is_active: function (page) {

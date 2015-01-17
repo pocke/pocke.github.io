@@ -38,7 +38,7 @@
 
         <!--links-->
         <div class="content-pane" v-if="is_active('links')" class="col-xs-12" v-transition="fade">
-          <span>bar</span>
+          <link-item v-repeat="item: links"></link-item>
         </div>
 
 
