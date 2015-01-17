@@ -46,10 +46,7 @@
         <div class="content-pane" v-if="is_active('works')" class="col-xs-12" v-transition="fade">
           <div v-repeat="x: works">
             <h3 v-text="$key" class="page-header text-capitalize"></h3>
-            <a v-repeat="w: x" v-attr="href: w.url" class="col-xs-12 works-item">
-              <h4 v-text="w.title"></h4>
-              <p v-text="w.detail"></p>
-            </a>
+            <link-item v-repeat="item: x"></link-item>
           </div>
         </div>
       </div>
@@ -61,6 +58,13 @@
   <script id="menu-btn-template" type="x-template">
     <a href="" v-class="active: is_active(name)" class="col-xs-4 menu-btn" v-on="click: show(name)">
       <h2 class="text-uppercase text-center" v-text="name"></h2>
+    </a>
+  </script>
+
+  <script id="link-item-template" type="x-template">
+    <a v-attr="href: item.url" class="col-xs-12 link-item">
+      <h4 v-text="item.title"></h4>
+      <p v-text="item.detail"></p>
     </a>
   </script>
 

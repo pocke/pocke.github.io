@@ -15,6 +15,11 @@
   });
 
 
+  Vue.component('link-item', {
+    template: '#link-item-template',
+  });
+
+
 
   var app = new Vue({
     el: '#vue-main',
