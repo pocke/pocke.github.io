@@ -81,7 +81,7 @@
 
   <!-- v-with="name: 'about'" -->
   <script id="menu-btn-template" type="x-template">
-    <a href="" v-class="active: is_active(name)" class="col-xs-4 menu-btn" v-on="click: show(name)">
+    <a href="{{name + '.html'}}" v-class="active: is_active(name)" class="col-xs-4 menu-btn" v-on="click: show(name)">
       <h2 class="text-uppercase text-center" v-text="name"></h2>
     </a>
   </script>
