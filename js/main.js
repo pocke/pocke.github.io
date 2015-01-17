@@ -4,10 +4,12 @@
 
   Vue.component('menu-btn', {
     template: '#menu-btn-template',
+    inherit: true,
     methods: {
-      show: function (name) {
+      show: function (page) {
         this.$event.preventDefault();
-        this.$dispatch('show', name);
+        history.pushState(page, null, page + '.html');
+        this.active = page;
       },
     }
   });
@@ -41,18 +43,9 @@
       },
     },
     methods: {
-      show: function (page) {
-        history.pushState(page, null, page + '.html');
-        this.active = page;
-      },
       is_active: function (page) {
         return this.active == page;
       },
-    },
-    created: function () {
-      this.$on('show', function (name) {
-        this.show(name);
-      });
     },
   });
 
