@@ -43,6 +43,13 @@
             detail: 'ステータスバーにバッテリー残量を表示するだけのアプリケーション',
           },
         ],
+        libraries: [
+          {
+            title:  'goevent',
+            url:    'https://github.com/pocke/goevent',
+            detail: 'Event dispatcher written by golang.',
+          }
+        ],
         'mikutter plugins': [
           {
             title:  'mikutter vimize',
