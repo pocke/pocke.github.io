@@ -166,7 +166,12 @@
 
   var path = location.pathname;
   var m = /^\/(\w+)\.html$/.exec(path);
-  if (m && m[1] != 'index') {
-    app.$data.active = m[1];
+  var page;
+  if (m === null || m[1] === 'index') {
+    page = 'about';
+  } else {
+    page = m[1];
   }
+  history.replaceState(page, null);
+  app.$data.active = page;
 })();
