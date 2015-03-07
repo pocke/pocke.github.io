@@ -148,7 +148,17 @@
           title:  'Blog: pockestrap',
           url:    'http://pocke.hatenablog.com/',
           detail: '技術系ブログ。学んだことを備忘録ついでに発信。',
-        }
+        },
+        {
+          title:  'Facebook',
+          url:    'https://www.facebook.com/kwbr22',
+          detail: '1ヶ月に1回程度の頻度で生存報告をしている。',
+        },
+        {
+          title:  'Amazon Wish List',
+          url:    'http://www.amazon.co.jp/registry/wishlist/38BZCKQ98LG4K',
+          detail: '買って♡',
+        },
       ],
     },
     methods: {
