@@ -28,6 +28,21 @@
       works: {
         applications: [
           {
+            title:  'gfm-viewer',
+            url:    'https://github.com/pocke/gfm-viewer',
+            detail: 'gfm-viewer is GitHub Flavored markdown Viewer.',
+          },
+          {
+            title:  'benchcmp-vcs',
+            url:    'https://github.com/pocke/benchcmp-vcs',
+            detail: 'benchcmp-vcs is a wrapper of benchcmp.',
+          },
+          {
+            title:  'twtoken',
+            url:    'https://github.com/pocke/twtoken',
+            detail: 'Get twitter access token from command line.',
+          },
+          {
             title:  'Vim Scouter Web',
             url:    'https://github.com/pocke/vim_scouter_web',
             detail: 'Vim戦闘力をWebから計測',
@@ -45,10 +60,15 @@
         ],
         libraries: [
           {
+            title:  'go-minisat',
+            url:    'https://github.com/pocke/go-minisat',
+            detail: 'Golang binding for Minisat.',
+          },
+          {
             title:  'goevent',
             url:    'https://github.com/pocke/goevent',
             detail: 'Event dispatcher written by golang.',
-          }
+          },
         ],
         'mikutter plugins': [
           {
