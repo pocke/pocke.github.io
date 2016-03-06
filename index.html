@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>me.pocke.me</title>
-  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/main.css">
+  <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Masataka Kuwabara (Pocke)</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
   <!-- favicons -->
   <link rel="shortcut icon" type="image/x-icon" href="/icons/favicon.ico" />
@@ -19,104 +17,86 @@
   <link rel="apple-touch-icon" sizes="152x152"  href="/icons/apple-touch-icon-152x152.png" />
 </head>
 
-<body>
-  <div id="vue-main" class="container">
-    <div class="col-xs-12">
-
-      <div class="row">
-        <h1 class="page-header col-xs-6 col-sm-8 title">Pocke</h1>
-        <div class="col-xs-6 col-sm-4 honya-icon-wrap">
-          <img src="imgs/icon.svg" alt="Icon" class="img-responsive img-circle honya-icon">
-        </div>
-      </div>
 
 
-      <div class="row" style="margin-top: 10px;">
-        <menu-btn v-with="name: 'about'"></menu-btn>
-        <menu-btn v-with="name: 'works'"></menu-btn>
-        <menu-btn v-with="name: 'links'"></menu-btn>
-      </div>
+<body style="background-color: #fbe6ee;">
 
 
-      <!-- content -->
-      <div class="row">
-        <!--about-->
-        <div class="content-pane" v-if="is_active('about')" class="col-xs-12" v-transition="fade">
-          <h3 class="page-header text-capitalize">Profile</h3>
-          <p>
-          Born: Feb 2, 1994<br />
-          Place: Kawasaki, Japan<br />
-          Programmer<br />
-          基本情報技術者 / 応用情報技術者 / データベーススペシャリスト
-          </p>
-          <h3 class="page-header text-capitalize">interests</h3>
-          <div class="col-sm-6">
-            <h4>Computer</h4>
-            <ul>
-              <li>Ruby</li>
-              <ul>
-                <li>mikutter</li>
-                <li>Ruby on Rails</li>
-              </ul>
-              <li>Golang</li>
-              <li>Vim</li>
-              <li>Arch Linux</li>
-            </ul>
-          </div>
-          <div class="col-sm-6">
-            <h4>Book and Comics</h4>
-            <ul>
-              <li>梶尾真治</li>
-              <li>新井素子</li>
-              <li>草上仁</li>
-              <li>わかつきめぐみ</li>
-              <li>坂田靖子</li>
-            </ul>
-          </div>
-
-        </div>
+<div class="container">
+  <div class="row">
+    <h1 class="text-center">
+      Masataka Kuwabara<br />
+      a.k.a. Pocke
+    </h1>
+  </div>
 
 
-        <!--links-->
-        <div class="content-pane" v-if="is_active('links')" class="col-xs-12" v-transition="fade">
-          <link-item v-repeat="item: links"></link-item>
-        </div>
-
-
-        <!--works-->
-        <div class="content-pane" v-if="is_active('works')" class="col-xs-12" v-transition="fade">
-          <div v-repeat="x: works">
-            <h3 v-text="$key" class="page-header text-capitalize"></h3>
-            <link-item v-repeat="item: x"></link-item>
-          </div>
-        </div>
-      </div>
-
+  <div class="row">
+    <div class="col-xs-3" style="float: none; margin: 0 auto;">
+      <img src="/imgs/icon.svg" alt="ほにゃー" class="img-responsive img-circle" style="width: 100%">
     </div>
-  </div> <!-- container -->
+  </div>
 
-  <footer class="navbar navbar-default navbar-fixed-bottom" role="contentinfo">
-    <div class="container">
-      <p class="navbar-text">Copyright &copy; 2015 <a href="https://github.com/pocke">pocke</a>. Licensed <a href="http://www.opensource.org/licenses/mit-license.php" target="_blank">MIT</a></p>
+
+
+  <div class="row">
+
+
+    <div class="col-xs-12 col-sm-6" style="padding: auto 5%">
+      <h2 class="text-center">Accounts and Links</h2>
+
+      <h4><a href="https://github.com/pocke">GitHub</a></h4>
+      <h4><a href="https://twitter.com/p_ck_">Twitter</a></h4>
+      <h4><a href="https://facebook.com/kwbr22">Facebook</a></h4>
+      <h4><a href="https://bearfruits.net/portfolios/80">bearfruits</a></h4>
+      <h4><a href="http://pocke.hatenablog.com/">pockestrap (Japanese Blog)</a></h4>
     </div>
-  </footer>
 
-  <!-- v-with="name: 'about'" -->
-  <script id="menu-btn-template" type="x-template">
-    <a href="{{name + '.html'}}" v-class="active: is_active(name)" class="col-xs-4 menu-btn" v-on="click: show(name)">
-      <h2 class="text-uppercase text-center" v-text="name"></h2>
-    </a>
-  </script>
+    <div class="col-xs-12 col-sm-6" style="padding: auto 5%">
+      <h2 class="text-center">Products</h2>
 
-  <script id="link-item-template" type="x-template">
-    <a v-attr="href: item.url" target="_blank" class="col-xs-12 link-item">
-      <h4>{{* item.title}}</h4>
-      <p>{{* item.detail}}</p>
-    </a>
-  </script>
+      <h4><a href="https://bearfruits.net">bearfruits</a></h4>
+      <p>Get automated portfolio from your Github account.</p>
+      <!-- If you are a programmer, your portfolio is at here. -->
+      <h4><a href="https://www.sideci.com">SideCI</a></h4>
+      <p>Clean Code and Culture for your team. SideCI provides Automated Code Review.</p>
+      <h4><a href="https://github.com/skyarch-networks/skyhopper">SkyHopper</a></h4>
+      <p>A DevOps tool. SkyHopper integrates AWS, Chef, Serverspec, and Zabbix.</p>
+      <h4><a href="https://github.com/pocke?tab=repositories">And more!</a></h4>
+    </div>
 
-  <!-- Scripts -->
-  <script src="bower_components/vue/dist/vue.min.js"></script>
-  <script src="/js/main.js"></script>
+  </div>
+
+</div>
+
+<style>
+h4 {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.container {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+
+</style>
+
 </body>
 </html>
