@@ -14,6 +14,7 @@ Talks
 
 - Date: 2016/04/16
 - Slide: NONE (but a memo exists https://gist.github.com/pocke/9b99b5f23f8a98b5cd994ef759989acb )
+- Blog: [PORTもくもく会でgitについてLTしてきた - pockestrap](http://pocke.hatenablog.com/entry/2016/04/17/143708)
 - At: [第15回【フリースタイル】PORTもくもく会【学生歓迎！】 - connpass](http://freestyle-mokumoku.connpass.com/event/28229/)
 
 ### Rubyでショートコーディング
