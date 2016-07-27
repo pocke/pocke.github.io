@@ -4,6 +4,12 @@ Talks
 2016
 --------
 
+### Appraisalを使ってみた話
+
+- Date: 2016/07/27
+- Slide: http://me.pocke.me/slide-appraisal/#/
+- At: [Shinjuku.rb #39 - Shinjuku.rb | Doorkeeper](https://shinjukurb.doorkeeper.jp/events/49357)
+
 ### ぼくのかんがえた(つくった)さいきょうのつーる
 
 - Date: 2016/06/11
