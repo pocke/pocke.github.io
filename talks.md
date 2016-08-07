@@ -4,6 +4,12 @@ Talks
 2016
 --------
 
+### Slackの楽しみ方
+
+- Date: 2016/08/06
+- Slide: http://me.pocke.me/slide-slack/
+- At: [第19回【フリースタイル】PORTもくもく会【学生歓迎！】 - connpass](http://freestyle-mokumoku.connpass.com/event/36140/)
+
 ### Appraisalを使ってみた話
 
 - Date: 2016/07/27
