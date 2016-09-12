@@ -4,6 +4,12 @@ Talks
 2016
 --------
 
+### RRRuboCop
+
+- Date: 2016/09/12
+- Slide: http://me.pocke.me/slide-rrrubocop/#/
+- At: [【学生歓迎】プログラミングもくもく会：クラウドワークスがカフェ代わりに！？ - connpass](http://crowdworks.connpass.com/event/38892/)
+
 ### Slackの楽しみ方
 
 - Date: 2016/08/06
