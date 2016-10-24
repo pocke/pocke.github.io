@@ -4,6 +4,13 @@ Talks
 2016
 --------
 
+### 0からはじめるRuboCop
+
+- Date: 2016/10/23
+- Slide: http://qiita.com/pocke/items/315947e604c4a868892a
+- Video: https://youtu.be/43Q6zCadLVc?t=2h6m48s
+- At: [Dentoo.LT #15 : ATND](https://atnd.org/events/81655)
+
 ### RRRuboCop
 
 - Date: 2016/09/12
