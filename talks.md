@@ -4,6 +4,12 @@ Talks
 2016
 --------
 
+### Pockeが1バン好きなこと
+
+- Date: 2016/11/12
+- Slide: https://speakerdeck.com/pocke/pockega1banhao-kinakoto
+- At: Cookpad 同窓会
+
 ### 0からはじめるRuboCop
 
 - Date: 2016/10/23
