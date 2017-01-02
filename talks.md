@@ -4,6 +4,18 @@ Talks
 2016
 --------
 
+### Ruby 2.4 のための RuboCop
+
+- Date: 2016/12/26
+- Slide: http://me.pocke.me/slide-ruby24-rubocop/#/
+- At: [五反田.rb#17(ruby2.4について) - connpass](https://gotanda-rb.connpass.com/event/47098/)
+
+### 2016年にpockeが作ったものまとめ
+
+- Date: 2016/12/23
+- Slide: http://me.pocke.me/slide-2016-created-repositories/
+- At: [第23回【フリースタイル】PORTもくもく会【学生歓迎！】 - connpass](https://freestyle-mokumoku.connpass.com/event/46093/)
+
 ### Pockeが1バン好きなこと
 
 - Date: 2016/11/12
