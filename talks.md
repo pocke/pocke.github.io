@@ -1,6 +1,15 @@
 Talks
 ========
 
+2017
+----
+
+### 実用的な RuboCop の話
+
+- Date: 2017/2/2
+- Slide: http://me.pocke.me/slide-practical-rubocop/
+- At: [表参道.rb #19 静的解析と技術的負債と…… - connpass](https://omotesandorb.connpass.com/event/48967/)
+
 2016
 --------
 
