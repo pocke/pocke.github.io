@@ -4,6 +4,12 @@ Talks
 2017
 ----
 
+### 自分の足を撃たない技術
+
+- Date: 2017/3/11
+- Slide: http://qiita.com/pocke/items/71dc9c6a9ea33dd95aac
+- At: [Battle Conference U30 - connpass](https://battleconference-u30.connpass.com/event/49985/)
+
 ### 実用的な RuboCop の話
 
 - Date: 2017/2/2
