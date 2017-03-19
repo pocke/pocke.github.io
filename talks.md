@@ -4,6 +4,12 @@ Talks
 2017
 ----
 
+### 完全RuboCop
+
+- Date: 2017/3/19
+- Slide: http://qiita.com/pocke/items/c930cae5432658a34333
+- At: [Dentoo.LT #15 : ATND](https://atnd.org/events/85762)
+
 ### 自分の足を撃たない技術
 
 - Date: 2017/3/11
