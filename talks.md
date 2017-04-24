@@ -4,6 +4,12 @@ Talks
 2017
 ----
 
+### Rubyがむずかしい話
+
+- Date: 2017/4/20
+- Slide: http://qiita.com/pocke/items/41f1a5ab7d1776a191b0
+- At: [Meguro.rb#2 - connpass](https://megurorb.connpass.com/event/55107/)
+
 ### 完全RuboCop
 
 - Date: 2017/3/19
