@@ -4,6 +4,13 @@ Talks
 2017
 ----
 
+### ちょっとマニアックな○○コマンドの使い方
+
+- Date: 2017/6/4
+- Slide: https://github.com/pocke/slide-maniac-command-usage
+- Video: https://youtu.be/N0gsp-0rCIA?t=20m19s
+- At: [Dentoo.LT #17 : ATND](https://atnd.org/events/88084)
+
 ### Rubyがむずかしい話
 
 - Date: 2017/4/20
@@ -15,7 +22,7 @@ Talks
 - Date: 2017/3/19
 - Slide: http://qiita.com/pocke/items/c930cae5432658a34333
 - Video: https://youtu.be/mL62zVq4cJA?t=1h23m28s
-- At: [Dentoo.LT #15 : ATND](https://atnd.org/events/85762)
+- At: [Dentoo.LT #16 : ATND](https://atnd.org/events/85762)
 
 
 ### 自分の足を撃たない技術
