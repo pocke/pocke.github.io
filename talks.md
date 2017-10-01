@@ -4,6 +4,23 @@ Talks
 2017
 ----
 
+
+### Writing Lint for Ruby
+
+- Date: 2017/9/20
+- Slide: https://speakerdeck.com/pocke/writing-lint-for-ruby
+- Video: https://www.youtube.com/watch?v=xr3uDzQIuBA
+- Blog: http://pocke.hatenablog.com/entry/2017/09/14/123611
+- At: [RubyKaigi 2017](http://rubykaigi.org/2017/presentations/p_ck_.html)
+
+
+### Dive into Rubygems
+
+- Date: 2017/8/24
+- Slide: https://qiita.com/pocke/items/1db63a3aecade1245f42
+- At: [Rails Developers Meetup #4](https://rails-developers-meetup.connpass.com/event/62792/)
+
+
 ### ちょっとマニアックな○○コマンドの使い方
 
 - Date: 2017/6/4
