@@ -4,6 +4,12 @@ Talks
 2017
 ----
 
+### Ruby Quiz
+
+- Date: 2017/10/8
+- Slide: https://speakerdeck.com/pocke/ruby-quiz
+- Blog: http://pocke.hatenablog.com/entry/2017/10/08/211429
+- At: [第4回 学生エンジニア限定LT大会！！！](https://student-lt.connpass.com/event/67419/)
 
 ### Writing Lint for Ruby
 
