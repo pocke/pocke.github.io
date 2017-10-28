@@ -4,6 +4,13 @@ Talks
 2017
 ----
 
+### My Practical CLI tools
+
+- Date: 2017/10/21
+- Slide: https://speakerdeck.com/pocke/my-practical-cli-tools
+- Blog: http://pocke.hatenablog.com/entry/2017/10/22/152225
+- At: [第33回【フリースタイル】PORTもくもく会【学生歓迎！】](https://freestyle-mokumoku.connpass.com/event/68385/)
+
 ### Ruby Quiz
 
 - Date: 2017/10/8
