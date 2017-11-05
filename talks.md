@@ -4,6 +4,13 @@ Talks
 2017
 ----
 
+### The new syntax highlighter for Vim
+
+- Date: 2017/11/4
+- Slide: https://speakerdeck.com/pocke/the-new-syntax-highlighter-for-vim
+- Blog: http://pocke.hatenablog.com/entry/2017/11/04/221926
+- At: [VimConf 2017](http://vimconf.vim-jp.org/2017/)
+
 ### My Practical CLI tools
 
 - Date: 2017/10/21
