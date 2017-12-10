@@ -4,6 +4,13 @@ Talks
 2017
 ----
 
+### Vim and Ruby
+
+- Date: 2017/12/9
+- Slide: https://speakerdeck.com/pocke/vim-and-ruby-1
+- Blog: http://pocke.hatenablog.com/entry/2017/12/10/092630
+- At: [Rails Developers Meetup 2017](https://railsdm.github.io/2017/)
+
 ### The new syntax highlighter for Vim
 
 - Date: 2017/11/4
