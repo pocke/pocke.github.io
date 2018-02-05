@@ -1,6 +1,15 @@
 Talks
 ========
 
+2018
+---
+
+### RuboCop for Code Review
+
+- Date: 2018/1/19
+- Slide: https://speakerdeck.com/pocke/rubocop-for-code-review
+- At: [Code Review Meetup #1 Code Reviewで集まろう](https://connpass.com/event/75567/)
+
 2017
 ----
 
