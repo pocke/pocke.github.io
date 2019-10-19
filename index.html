@@ -6,7 +6,6 @@
   <meta content="#FFC8E5" name="theme-color">
 
   <title>Masataka Kuwabara (Pocke)</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
   <!-- favicons -->
   <link rel="shortcut icon" type="image/x-icon" href="/icons/favicon.ico" />
@@ -26,18 +25,16 @@
 
 
 <div class="container">
-  <div class="row">
-    <h1 class="text-center">
+  <div class="header">
+    <h1>
       Masataka Kuwabara<br />
       a.k.a. Pocke
     </h1>
   </div>
 
 
-  <div class="row">
-    <div class="col-xs-3" style="float: none; margin: 0 auto;">
-      <img src="/imgs/icon.svg" alt="ほにゃー" class="img-responsive img-circle" style="width: 100%">
-    </div>
+  <div class="profile-icon-container" >
+    <img src="/imgs/icon.svg" alt="ほにゃー" class="profile-icon">
   </div>
 
 
@@ -45,28 +42,23 @@
   <div class="row">
 
 
-    <div class="col-xs-12 col-sm-6">
+    <div class="col">
       <h2 class="text-center">Accounts and Links</h2>
 
       <h4><a href="https://github.com/pocke">GitHub</a></h4>
       <h4><a href="https://twitter.com/p_ck_">Twitter</a></h4>
       <h4><a href="https://facebook.com/kwbr22">Facebook</a></h4>
-      <h4><a href="https://bearfruits.net/@pocke">bearfruits</a></h4>
       <h4><a href="http://pocke.hatenablog.com/">pockestrap (Japanese Blog)</a></h4>
       <h4><a href="http://www.amazon.co.jp/registry/wishlist/38BZCKQ98LG4K">Amazon wish list</a></h4>
       <h4><a href="https://github.com/pocke/resume/blob/master/talks.md">Talks</a></h4>
       <h4><a href="https://github.com/pocke/pocke.github.io/blob/master/sukikirai.md">好き嫌い</a></h4>
     </div>
 
-    <div class="col-xs-12 col-sm-6">
+    <div class="col">
       <h2 class="text-center">Works</h2>
 
-      <h4><a href="https://bearfruits.net">bearfruits</a></h4>
-      <p>Get automated portfolio from your GitHub account.</p>
-      <!-- If you are a programmer, your portfolio is at here. -->
-
-      <h4><a href="https://shibart.pocke.me">Shibart</a></h4>
-      <p>Create T-shirt from GitHub grasses.</p>
+      <h4><a href="https://github.com/pocke/whichpr">whichpr</a></h4>
+      <p>Find the pull request from commit hash</p>
 
       <h4><a href="https://bacon-cannon.herokuapp.com">Bacon Cannon</a></h4>
       <p>An online Ruby parser</p>
@@ -80,33 +72,83 @@
 </div>
 
 <style>
+
 body {
   background-color: #fbe6ee;
+  display: flex;
+  justify-content: space-around;
 }
 
 h4 {
   margin-top: 15px;
 }
 
-@media screen and (max-width: 767px) {
+.container {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+.profile-icon-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-icon {
+  border-radius: 50%;
+  display: block;
+  height: auto;
+  width: 25%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+@media (max-width: 767px) {
   .container {
-    margin-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px;
+  }
+
+  .col {
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .container {
+    width: 750px;
     margin-top: 100px;
     padding-bottom: 100px;
   }
 }
 
-.container {
-  background-color: #fff;
-  margin-bottom: 20px;
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 
 
