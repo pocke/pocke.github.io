@@ -50,6 +50,13 @@
       <h4><a href="https://facebook.com/kwbr22">Facebook</a></h4>
       <h4><a href="https://github.com/pocke/zatsu/issues/new">Contact</a></h4>
       <h4><a rel="me" href="https://ruby.social/@pocke">Mastodon</a></h4>
+
+      <h2 class="text-center">Projects</h2>
+
+      <h4><a href="https://elin.pocke.me/ja">Elin キャラクタービューワー</a></h4>
+      <p class="description">ゲーム「Elin」の情報サイト</p>
+      <h4><a href="https://nesugoshi.app/">ネスゴシ</a></h4>
+      <p class="description">路線図から駅を当てるゲーム</p>
     </div>
 
     <div class="col">
@@ -78,6 +85,12 @@ body {
 
 h4 {
   margin-top: 15px;
+}
+
+/* Without this, h4's bottom margin collapses with the .description's top
+   margin: https://drafts.csswg.org/css2/#collapsing-margins */
+h4:has(+ .description) {
+  margin-bottom: 0;
 }
 
 .container {
@@ -115,6 +128,11 @@ h4 {
 
 .text-center {
   text-align: center;
+}
+
+.description {
+  font-size: 0.875em;
+  margin: 3px 0 0;
 }
 
 
